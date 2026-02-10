@@ -129,53 +129,54 @@
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
 
-    <!-- Large decorative tow truck silhouette -->
-    <div class="hero-truck" aria-hidden="true">
-      <svg viewBox="0 0 800 350" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g opacity="0.06" fill="white">
-          <!-- Tow truck body -->
-          <rect x="180" y="140" width="420" height="120" rx="8"/>
-          <rect x="130" y="180" width="80" height="80" rx="6"/>
-          <!-- Cab -->
-          <path d="M600 120 L600 260 L720 260 L720 180 L680 120 Z"/>
-          <!-- Windshield -->
-          <path d="M640 130 L660 130 L700 185 L640 185 Z" fill-opacity="0.5"/>
-          <!-- Boom arm -->
-          <path d="M200 140 L120 40 L140 30 L230 130 Z"/>
-          <circle cx="115" cy="35" r="12"/>
-          <!-- Hook -->
-          <path d="M115 47 L115 75 Q115 85 105 85 Q95 85 95 75 L95 70" stroke="white" stroke-width="5" fill="none"/>
-          <!-- Wheels -->
-          <circle cx="250" cy="275" r="35"/>
-          <circle cx="250" cy="275" r="18" fill-opacity="0.4"/>
-          <circle cx="420" cy="275" r="35"/>
-          <circle cx="420" cy="275" r="18" fill-opacity="0.4"/>
-          <circle cx="660" cy="275" r="35"/>
-          <circle cx="660" cy="275" r="18" fill-opacity="0.4"/>
-          <!-- Fender -->
-          <rect x="600" y="250" width="140" height="10" rx="5"/>
-          <!-- Lights -->
-          <rect x="720" y="190" width="15" height="25" rx="3"/>
-          <rect x="130" y="190" width="10" height="15" rx="2"/>
-          <!-- Light bar on top -->
-          <rect x="620" y="110" width="70" height="12" rx="6" fill-opacity="0.4"/>
-        </g>
-      </svg>
+    <!-- Decorative geometric elements -->
+    <div class="hero-deco" aria-hidden="true">
+      <div class="hero-deco-ring hero-deco-ring--1"></div>
+      <div class="hero-deco-ring hero-deco-ring--2"></div>
+      <div class="hero-deco-line hero-deco-line--1"></div>
+      <div class="hero-deco-line hero-deco-line--2"></div>
     </div>
 
-    <div class="container hero-content">
-      <span class="section-label hero-label">Baytown &amp; Mont Belvieu, TX</span>
-      <h1 class="hero-title">
-        <span class="hero-title-line">24/7 Emergency</span>
-        <span class="hero-title-line">Towing &amp; Recovery</span>
-      </h1>
-      <p class="hero-desc">Full-service light, medium, and heavy-duty towing. Roadside assistance and vehicle recovery when you need it most. Locally owned by Don Graham II.</p>
-      <div class="hero-actions">
-        <a href="tel:2813832402" class="btn btn-red btn-pulse">
-          <i class="fas fa-phone-alt"></i>
-          Call (281) 383-2402
-        </a>
-        <a href="#services" class="btn btn-outline">Our Services</a>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="section-label hero-label">Baytown &amp; Mont Belvieu, TX</span>
+        <h1 class="hero-title">
+          <span class="hero-title-line">24/7 Emergency</span>
+          <span class="hero-title-line">Towing <span class="hero-amp">&amp;</span> Recovery</span>
+        </h1>
+        <p class="hero-desc">Full-service light, medium, and heavy-duty towing. Roadside assistance and vehicle recovery when you need it most. Locally owned by Don Graham II.</p>
+        <div class="hero-actions">
+          <a href="tel:2813832402" class="btn btn-red btn-pulse">
+            <i class="fas fa-phone-alt"></i>
+            Call (281) 383-2402
+          </a>
+          <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+
+      <!-- Floating hero badges on right side -->
+      <div class="hero-badges">
+        <div class="hero-badge hero-badge--1">
+          <div class="hero-badge-icon"><i class="fas fa-truck-moving"></i></div>
+          <div class="hero-badge-text">
+            <strong>Light &bull; Medium &bull; Heavy</strong>
+            <span>All Duty Classes</span>
+          </div>
+        </div>
+        <div class="hero-badge hero-badge--2">
+          <div class="hero-badge-icon hero-badge-icon--red"><i class="fas fa-clock"></i></div>
+          <div class="hero-badge-text">
+            <strong>Open 24/7</strong>
+            <span>365 Days a Year</span>
+          </div>
+        </div>
+        <div class="hero-badge hero-badge--3">
+          <div class="hero-badge-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="hero-badge-text">
+            <strong>Baytown, TX</strong>
+            <span>Hwy 146 &bull; Fast Response</span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -292,12 +293,12 @@
           <hr class="red-rule">
           <p>When you're stranded on the side of the road, you need someone you can count on. Graham Towing &amp; Recovery has earned the trust of drivers across the Baytown area with honest service, fair pricing, and the kind of reliability that only comes from a locally owned business.</p>
           <ul class="why-list">
-            <li><i class="fas fa-check-circle"></i> <strong>24/7 emergency dispatch</strong> — we never close</li>
-            <li><i class="fas fa-check-circle"></i> <strong>Fair, upfront pricing</strong> — no hidden fees</li>
-            <li><i class="fas fa-check-circle"></i> <strong>Baytown Chamber member</strong> — trusted local business</li>
-            <li><i class="fas fa-check-circle"></i> <strong>Light to heavy duty</strong> — one call handles it all</li>
-            <li><i class="fas fa-check-circle"></i> <strong>Professional drivers</strong> — experienced and courteous</li>
-            <li><i class="fas fa-check-circle"></i> <strong>Credit cards accepted</strong> — convenient payment options</li>
+            <li><i class="fas fa-check-circle"></i> <div><strong>24/7 Emergency Dispatch</strong><span>We never close — day or night, we answer.</span></div></li>
+            <li><i class="fas fa-check-circle"></i> <div><strong>Fair, Upfront Pricing</strong><span>No hidden fees or surprise charges.</span></div></li>
+            <li><i class="fas fa-check-circle"></i> <div><strong>Baytown Chamber Member</strong><span>Trusted and established local business.</span></div></li>
+            <li><i class="fas fa-check-circle"></i> <div><strong>Light to Heavy Duty</strong><span>One call handles it all — any size vehicle.</span></div></li>
+            <li><i class="fas fa-check-circle"></i> <div><strong>Professional Drivers</strong><span>Experienced, courteous, and fully trained.</span></div></li>
+            <li><i class="fas fa-check-circle"></i> <div><strong>Credit Cards Accepted</strong><span>Convenient payment options on every job.</span></div></li>
           </ul>
         </div>
         <div class="why-us-image reveal reveal-right">
