@@ -7,18 +7,25 @@
 (function () {
   'use strict';
 
-  /* ---------- Header scroll state ---------- */
+  /* ---------- Header scroll state + emergency bar ---------- */
   var header = document.querySelector('.site-header');
+  var emergencyBar = document.querySelector('.emergency-bar');
   var lastScroll = 0;
 
   function onScroll() {
     var y = window.scrollY;
     if (y > 60) {
       header.classList.add('scrolled');
+      if (emergencyBar) emergencyBar.style.transform = 'translateY(-100%)';
     } else {
       header.classList.remove('scrolled');
+      if (emergencyBar) emergencyBar.style.transform = 'translateY(0)';
     }
     lastScroll = y;
+  }
+
+  if (emergencyBar) {
+    emergencyBar.style.transition = 'transform 0.35s ease';
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
