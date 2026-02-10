@@ -1529,7 +1529,15 @@ h1, h2, h3, h4 {
 @media (max-width: 768px) {
   .emergency-bar { display: none; }
   .site-header { top: 0; }
-  .hero { padding-top: 80px; }
+
+  .hero {
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding-top: 72px;
+    padding-bottom: 2rem;
+  }
+
+  .hero-badges { display: none; }
 
   .menu-toggle { display: block; }
 
@@ -1567,15 +1575,6 @@ h1, h2, h3, h4 {
 
   .why-us-image { min-height: 280px; }
 
-  .hero-badges {
-    flex-direction: column;
-  }
-
-  .hero-badge {
-    max-width: none;
-    flex: none;
-  }
-
   .footer-inner { grid-template-columns: 1fr; text-align: center; }
 
   .footer-brand .footer-logo { justify-content: center; }
@@ -1589,15 +1588,15 @@ h1, h2, h3, h4 {
 
   .mobile-call-bar { display: block; }
 
-  /* Add bottom padding for mobile call bar */
   body { padding-bottom: 70px; }
 
   .hero-scroll { display: none; }
+
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
 }
 
 @media (max-width: 480px) {
-  .hero-actions { flex-direction: column; }
-  .hero-actions .btn { width: 100%; justify-content: center; }
   .trust-grid { grid-template-columns: 1fr; }
   .review-card { padding: 1.5rem; }
   .review-quote-mark { font-size: 2.5rem; }
