@@ -69,9 +69,11 @@ ul { list-style: none; }
 
 /* ---------- Utility ---------- */
 .container {
-  width: 90%;
+  width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
+  padding-left: clamp(1.25rem, 5vw, 4rem);
+  padding-right: clamp(1.25rem, 5vw, 4rem);
 }
 
 /* ---------- Typography ---------- */
